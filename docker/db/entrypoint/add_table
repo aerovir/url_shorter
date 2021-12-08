@@ -1,0 +1,15 @@
+
+CREATE TABLE main_table (
+    id SERIAL PRIMARY KEY,
+    user_id TEXT NOT NULL,
+    long_link TEXT NOT NULL,
+    short_link TEXT NOT NULL,
+    views INTEGER
+);
+
+CREATE TABLE users_table (
+    id SERIAL PRIMARY KEY,
+    login TEXT NOT NULL,
+    pass TEXT NOT NULL
+);
+
